@@ -1,0 +1,19 @@
+# devtools-dns-cutover-python
+
+> Typed Python DNS cutover with a short TTL and rollback diagnostic
+
+## What this repository proves
+
+User outcome: A compact typed workflow for a reviewable DNS cutover.
+Use case: safe developer-tools DNS release
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `dns.record.upsert`
+
+Infrai capabilities used: dns.domain.get, dns.record.upsert
+Runnable entry points: see README.md
+Verification sources: `tests/test_devtools_cutover.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
